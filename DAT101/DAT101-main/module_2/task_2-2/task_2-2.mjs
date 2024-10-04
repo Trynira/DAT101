@@ -10,7 +10,7 @@ printOut(
 /*2 + 3 * 2 - 4 * 6*/
 let answer1 = 2 + 3 * (2 - 4) * 6;
 answer1 = answer1.toString();
-printOut("The answer is " + answer1);
+printOut("2+3*(2-4)*6=" + answer1);
 printOut(newLine);
 
 printOut(
@@ -24,7 +24,7 @@ const value1 = 25.34; /*meters*/
 let answer2 = value1 / inch;
 answer2 = answer2.toFixed(2);
 answer2 = answer2.toString();
-printOut("The answer is " + answer2);
+printOut("25 meters and 34 centimeters = " + answer2+" inches.");
 printOut(newLine);
 
 printOut(
@@ -36,7 +36,7 @@ and 45 seconds to minutes. (Not allowed to use date objects).
 The task must be solved with primitives. */
 let answer3 = 3 * 24 * 60 + 12 * 60 + 14 + 45 / 60;
 answer3 = answer3.toString();
-printOut("The answer is " + answer3 + " minutes.");
+printOut("3 days, 12 hours, 14 minutes, 45 seconds = " + answer3 + " minutes.");
 printOut(newLine);
 
 printOut(
@@ -73,7 +73,7 @@ days += " days, ";
 hours += "hours, ";
 minutes += "minutes and ";
 seconds += "seconds.";
-printOut("formated time is " + days + hours + minutes + seconds);
+printOut("6322.52 minutes is: " + days + hours + minutes + seconds);
 printOut(newLine);
 
 printOut(
@@ -90,7 +90,8 @@ let kr = nok * usd;
 usd = usd.toString();
 kr = Math.trunc(kr);
 kr = kr.toString();
-printOut("nok " + kr + ", usd " + usd + ".");
+printOut("54 USD = " + kr + " NOK");
+printOut(kr+" NOK = " + usd + " USD");
 printOut(newLine);
 
 printOut(
@@ -107,14 +108,14 @@ let text6 = "There is much between heaven and earth that we do not understand.";
 printOut(text6);
 let length6 = text6.length;
 length6 = length6.toString();
-printOut(length6);
-printOut(text6.charAt(19));
-let part6_3 = "The characters between position number 35 and 8 following are: ";
+printOut("The text has "+length6+" characters");
+printOut("The character at position 19 is: "+text6.charAt(19));
+let part6_3 = "The characters between position number 35 and the 8 following are: ";
 for (let i = -1; i < 9; i++) {
   part6_3 += text6.charAt(35 + i);
 }
 printOut(part6_3);
-let part6index = "the index that earth starts is: ";
+let part6index = "the position that earth starts is: ";
 part6index += "34";
 printOut(part6index);
 printOut(newLine);
@@ -132,21 +133,21 @@ printOut(
 ● (2 equals 5) is this statement true?
 ● ("abcd" is greater than "bcd") is this statement false?*/
 let part7=(5>3);
-printOut("Is 5 greater than 3? "+part7.toString());
+printOut("5 > 3 is "+part7.toString());
 part7=(7>=7);
-printOut("Is 7 greater than or equal to 7? "+part7.toString());
+printOut("7 >= 7 is "+part7.toString());
 part7=("a">"b");
-printOut("Is \"a\" greater than \"b\"? "+part7.toString());
+printOut("\"a\" > \"b\" is "+part7.toString());
 part7=("1"<"a");
-printOut("Is \"1\" less than \"a\"? "+part7.toString());
+printOut("\"1\" < \"a\" is "+part7.toString()); /* wrong*/
 part7=("2500"<"abcd");
-printOut("Is \"2500\" less than \"abcd\"? "+part7.toString());
-part7=!("arne"!="thomas");
-printOut("\"arne\" is not equal to \"thomas\". "+part7.toString());
+printOut("\"2500\" < \"abcd\" is "+part7.toString());
+part7=("arne"!=="thomas");
+printOut("\"arne\" !== \"thomas\" is "+part7.toString());
 part7=(2==5);
-printOut("(2 equals 5) is this statement true? "+part7.toString());
+printOut("(2 === 5) === true is "+part7.toString());
 part7=!("abcd">"bcd");
-printOut("(\"abcd\" is greater than \"bcd\") is this statement false? "+part7.toString());
+printOut("(\"abcd\" > \"bcd\") === false is "+part7.toString());
 printOut(newLine);
 
 printOut(
@@ -160,12 +161,12 @@ printOut(
 let str1 ="254", str2="57.23", str3="25 kroner";
 
 let num1=parseInt(str1);
-printOut(num1.toString());
+printOut("\"254\" = "+num1.toString());
 let num2=parseFloat(str2);
-printOut(num2.toString());
+printOut("\"57.23\" = "+num2.toString());
 str3=str3.slice(0,-7);
 let num3=parseInt(str3);
-printOut(num3.toString());
+printOut("\"25 kroner\" = "+num3.toString());
 printOut(newLine);
 
 printOut(
@@ -174,7 +175,7 @@ printOut(
 /* Put your code below here!
 Create a variable "r" and randomly generate a number from 1 to 360 (1 >= r <= 360).*/
 const r= Math.floor(Math.random()*360)+1;
-printOut("Random number between 1 and 360: "+r.toString());
+printOut("const r= Math.floor(Math.random()*360)+1 = "+r.toString());
 printOut(newLine);
 
 /* Task 10*/
