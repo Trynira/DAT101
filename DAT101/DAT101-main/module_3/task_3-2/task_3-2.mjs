@@ -49,7 +49,7 @@ printOut(
   "--- Part 4 ----------------------------------------------------------------------------------------------"
 );
 /* Put your code below here!*/
-let primes = [1], i=1, x=0;
+/* let primes = [1], i=1, x=0;
 number=0;
 
 while (1<11) {
@@ -63,53 +63,45 @@ while (1<11) {
     }
     i++;
 }
-/* while (i<11) {
-    for (x=1;x<i;x++){
-        printOut(x+" "+i);
-    }
-    i++;
-} */
+
 printOut(primes);
+*/
 printOut(newLine);
 
 printOut(
   "--- Part 5 ----------------------------------------------------------------------------------------------"
 );
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+let K=0, R=0, arr=[];
+for (R=1;R<8;R++) {
+  for (K=1;K<10;K++) {
+    arr+= "K"+K+"R"+R+" ";
+  }
+  printOut(arr);
+  arr=[];
+  K=1;
+}
 printOut(newLine);
 
 printOut(
   "--- Part 6 ----------------------------------------------------------------------------------------------"
 );
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+/* 
+○ A: 89% – 100%
+○ B: 77% – 88%
+○ C: 65% – 76%
+○ D: 53% – 64%
+○ E: 41% – 52%
+○ F: 0% – 40%
+*/
+let Student=Math.floor(Math.random()*236)+1;
+printOut(Student.toString());
+
 printOut(newLine);
 
 printOut(
   "--- Part 7 ----------------------------------------------------------------------------------------------"
-);
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
-printOut(newLine);
-
-printOut(
-  "--- Part 8 ----------------------------------------------------------------------------------------------"
-);
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
-printOut(newLine);
-
-printOut(
-  "--- Part 9 ----------------------------------------------------------------------------------------------"
-);
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
-printOut(newLine);
-
-/* Task 10*/
-printOut(
-  "--- Part 10 ---------------------------------------------------------------------------------------------"
 );
 /* Put your code below here!*/
 printOut("Replace this with you answer!");
