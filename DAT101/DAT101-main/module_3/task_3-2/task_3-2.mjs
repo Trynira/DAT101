@@ -104,5 +104,7 @@ printOut(
   "--- Part 7 ----------------------------------------------------------------------------------------------"
 );
 /* Put your code below here!*/
+let fullstraight=0, pairs=0, tower=0, Yahtzee=0;
+
 printOut("Replace this with you answer!");
 printOut(newLine);
